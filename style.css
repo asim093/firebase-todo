@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+body {
+    background: url(https://cdn.dribbble.com/users/416610/screenshots/4801105/coding_desk_flat_vector_ui_ux_design_illustration_motion_animation_gif2.gif);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+    height: 40rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: -9px 11px 11px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -9px 11px 11px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -9px 11px 11px -1px rgba(0, 0, 0, 0.75);
+    overflow: auto;
+}
+
+.todo-container {
+    display: flex;
+    width: 100%;
+    align-self: flex-start;
+
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    list-style: none;
+    margin: 0rem 2rem;
+
+
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: slateblue;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+i {
+    float: right;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.todo-container h1 {
+    /* text-align: center; */
+}
+
+.input-div {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.input-div input {
+    width: 62%;
+    margin: 0px 10px;
+    padding: 5px;
+}
+
+.input-div button {
+    min-width: 15%;
+    margin: 0px 10px 0px 0px;
+    font-weight: 600;
+}
+
+.input-div input,
+button {
+    height: 2.5rem;
+    border-radius: 10px;
+}
+
+.todo-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 1rem;
+    padding: 20px;
+}
+
+
+.date_div {
+    width: 50%;
+}
+
+.date_div span {
+    width: 5%;
+    font-size: 20px;
+}
+
+.darkmode_div span {
+    font-size: 20px;
+}
+
+
+.language {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.language select {
+    margin: 0px 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .todo-header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .input-div {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .input-div input {
+        width: 100%;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .input-div button {
+        width: 90%;
+        margin-top: 10px;
+        min-height: 25px;
+    }
+}
